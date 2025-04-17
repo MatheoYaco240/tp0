@@ -28,10 +28,12 @@ int iniciar_servidor(void)
 
 	// Escuchamos las conexiones entrantes
 
-	int socket_cliente = esperar_cliente(socket_servidor);
+	//int socket_cliente = esperar_cliente(socket_servidor);
 
 	freeaddrinfo(servinfo);
 	log_trace(logger, "Listo para escuchar a mi cliente");
+
+	//int cod_op = recibir_operacion(socket_cliente);
 
 	return socket_servidor;
 }
